@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+h1,h3{
+  text-shadow: 2px 2px 15px greenyellow;
+}
+body {
+  background-color: #F6F6F6	;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif;
+  overflow-x: hidden; 
+}
+
+header {
+  text-align: center;
+  height: 100vh;
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(12, 11, 11, 0.9);
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 8px 16px;
+  margin-top: 20px;
+  margin: 30px;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+}
+
+nav ul li:hover {
+  border: 1px solid greenyellow;
+  background-color: #b4b4b442;
+  transition: 1s;
+  border-radius: 50px;
+}
+
+main {
+  text-align: center;
+}
+
+#presentation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#presentation h1 {
+  font-size: 80px;
+}
+
+#presentation h3 {
+  font-size: 40px;
+}
+
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+#skills-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills-section h1 {
+  margin-bottom: 10vh;
+  font-size: 60px;
+}
+
+#hobbies-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hobbies-section h1 {
+  margin-bottom: 20vh;
+  font-size: 60px;
+}
+
+#hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby {
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin: 15% 15%;
+  text-align: center;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#lets-talk {
+  font-size: 30px;
+  margin-bottom: 6vh;
+}
+
+.row.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-container {  
+  padding: 10px;
+  gap: 10px;
+  width: 100vw;
+}
+
+#mail, #phone {
+  margin-bottom: 4%;
+  margin-top: 1%;
+}
+
+#mail a, #phone a {
+  color: black;
+}
+
+
+.social-container a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid ;
+  box-shadow: 0 5px 8px 0 rgb(215, 209, 209);
+  border-radius: 10px;
+}
+
+.social-container a:hover {
+  background-color: #b4b4b473;  transition: 0.5s;
+  border-radius: 50px;
+  border: 2px solid greenyellow ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  border-radius: 5px;
+  height: 25vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(172, 255, 47, 0.733);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #presentation h1 {
+    font-size: 40px;
+  }
+
+  #presentation h3 {
+    font-size: 25px;
+  }
+
+  .card {
+    height: 15vh;
+    width: 40vw;
+    font-size: 20px;
+  }
+
+  #skills-section h1,
+  #hobbies-section h1 {
+    font-size: 40px;
+    margin-bottom: 10vh;
+  }
+
+  footer {
+    margin: 5% 5%;
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  nav ul li {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #presentation h1 {
+    font-size: 40px;
+  }
+
+  #presentation h3 {
+    font-size: 25px;
+  }
+
+  .card {
+    height: 15vh;
+    width: 40vw;
+    font-size: 20px;
+  }
+
+  #skills-section h1,
+  #hobbies-section h1 {
+    font-size: 40px;
+    margin-bottom: 10vh;
+  }
+
+}
+
+@media only screen and (max-width: 844px) {
+  
+  nav{margin-top: 8px;}
+  nav ul li {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #presentation h1 {
+    font-size: 37px;
+  }
+
+  #presentation h3 {
+    font-size: 30px;
+  }
+
+  .card {
+    height: 10vh;
+    width: 40vw;
+    font-size: 20px;
+  }
+
+  #skills-section h1,
+  #hobbies-section h1 {
+    font-size: 40px;
+    margin-bottom: 10vh;
+  }
+
+  footer {
+    height: 70vh;
+    margin: 0;
+  }
+
+  
+  .social-container a {
+    padding: 10px;
+  }
+}
